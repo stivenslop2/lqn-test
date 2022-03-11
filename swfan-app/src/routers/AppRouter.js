@@ -9,10 +9,10 @@ import {
 import { StarWarsHome } from '../modules/characters/pages/StarWarsHome';
 
 const AppRouter = () => {
-
+    const basename = process.env.REACT_APP_BASENAME || null;
 
     return (
-        <Router basename='/'>
+        <Router basename={ basename }>
             <Routes>
                 <Route
                     path='/list-characters'
